@@ -9,6 +9,12 @@ img {
 }
 
 /* COMMON */
+.container {
+    width: 70%;
+    margin: auto;
+    /* debug */
+    border: 1px solid black;
+}
 
 .container-large {
     width: 80%;
@@ -74,8 +80,8 @@ img {
 .hero {
     width: 100%;
     background-color: #B4D0E7;
-    height: 90vh;
-    padding: 6.5rem 0 0 0;
+    height: 97vh;
+    padding: 6.7rem 0 0 0;
 }
 
 .hero-title {
@@ -90,14 +96,59 @@ img {
     width: 35%;
     /* debug */
     height: 300px;
-    background-color:aqua;
+    background-color: aqua;
     margin: 1rem;
 }
 
 .hero-image {
     width: 55%;
     /* debug */
-    height: 500px;
-    background-color:aqua;
+    height: 400px;
+    background-color: aqua;
     margin: 1rem;
+}
+
+/* MAIN */
+/* business plan */
+.business-plan {
+    margin-top: 5rem;
+}
+
+.business-plan-title {
+    width: 100%;
+    /* debug */
+    height: 100px;
+    background-color: blueviolet;
+    margin: 0.5rem;
+}
+
+.business-plan-button {
+    width: 100%;
+    /* debug */
+    height: 50px;
+    background-color: blueviolet;
+    margin: 0.5rem;
+}
+
+.business-plan-card {
+    width: 100%;
+
+}
+
+.business-plan-professional,
+.business-plan-advanced,
+.business-plan-enterprise {
+    width: calc(95% / 3);
+    /* debug */
+    height: 700px;
+    background-color: blueviolet;
+    margin: 0.5rem;
+}
+
+.business-plan-enterprise-team {
+    width: 100%;
+    /* debug */
+    background-color: blueviolet;
+    height: 300px;
+    margin: 0.5rem;
 }
