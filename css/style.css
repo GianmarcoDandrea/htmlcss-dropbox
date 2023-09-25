@@ -239,3 +239,22 @@ background-color: red;
     height: 150px;
     background-color: green;
 }
+
+/* FAQ */
+.faq-title {
+    width: 100%;
+    /* debug */
+    height: 100px;
+    background-color: yellow;
+    margin: 1rem;
+}
+
+.faq-question {
+    width: 100%;
+    /* debug */
+    height: 300px;
+    background-color: yellow;
+    margin: 1rem;
+}
+
+
