@@ -219,3 +219,23 @@ background-color: red;
     aspect-ratio: (1/1);
 }
 
+/* free trial */
+
+.free-trial {
+    background-color: #B4D0E7;
+}
+
+.free-trial-title {
+    width: 60%;
+    /* debug */
+    height: 150px;
+    background-color: green;
+    margin-right: 1rem;
+}
+
+.free-trial-link {
+    width:calc(40% - 1rem);
+    /* degug */
+    height: 150px;
+    background-color: green;
+}
