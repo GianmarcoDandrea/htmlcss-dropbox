@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 img {
@@ -132,7 +134,6 @@ img {
 
 .business-plan-card {
     width: 100%;
-
 }
 
 .business-plan-professional,
@@ -151,4 +152,25 @@ img {
     background-color: blueviolet;
     height: 300px;
     margin: 0.5rem;
+}
+
+/* find partner section */
+.find-partner > .container {
+    padding: 1rem
+}
+
+.find-partner-image {
+    width: 50%;
+    /* debug */
+    height: 400px;
+    background-color: aquamarine;
+    margin-right: 1rem;
+}
+
+.find-partner-article {
+    width: 40%;
+    /* debug */
+    height: 400px;
+    background-color: aquamarine;
+
 }
