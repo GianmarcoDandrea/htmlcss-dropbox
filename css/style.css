@@ -155,7 +155,7 @@ img {
 }
 
 /* find partner section */
-.find-partner > .container {
+.find-partner>.container {
     padding: 1rem
 }
 
@@ -172,5 +172,12 @@ img {
     /* debug */
     height: 400px;
     background-color: aquamarine;
-
 }
+
+/* dopbox operation */
+.dropbox-operation > .container {
+    padding: 1rem;
+}
+
+
+
