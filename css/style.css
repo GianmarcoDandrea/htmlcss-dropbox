@@ -9,6 +9,7 @@
     --button-font-size: 0.9rem;
     --section-title-font: 1.5rem;
     --border-card: 1px solid lightgrey;
+    --padding-button-business-plan: 0.5rem 2rem;
 }
 
 /* RESET */
@@ -35,8 +36,6 @@ a {
     width: 70%;
     max-width: 1200px;
     margin: auto;
-    /* debug */
-    border: 1px solid black;
 }
 
 .container-large {
@@ -197,14 +196,15 @@ a {
 .business-plan-card {
     width: 100%;
     margin: 1rem;
-    gap: 0.8rem;
+    gap: 1.5rem;
     align-items: stretch;
+    justify-content: space-between;
 }
 
 .business-plan-professional,
 .business-plan-advanced,
 .business-plan-enterprise {
-    width: calc(95% / 3);
+    width: calc(90% / 3);
     border: var(--border-card);
 }
 
@@ -251,7 +251,7 @@ a {
     margin-top: 3rem;
     background-color: var(--button-color);
     color: var(--button-text-color);
-    padding: 0.5rem 2rem;
+    padding: var(--padding-button-business-plan)
 }
 
 .buy-now {
@@ -285,9 +285,32 @@ a {
     color: var(--button-color);
 }
 
+.enterprise .type-of-plan {
+    width: 60%;
+}
+
+.enterprise-button {
+    width: 40%;
+}
+
+.enterprise h4 {
+    margin-top: 1rem;
+}
+
+.enterprise p {
+    margin-top: 3rem;
+}
+
+.enterprise-button a {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: var(--padding-button-business-plan);
+    align-self: flex-start;
+}
+
 /* find partner section */
 .find-partner>.container {
-    padding: 1rem
+    padding: 1rem;
 }
 
 .find-partner-image {
