@@ -10,17 +10,18 @@
     --section-title-font: 1.5rem;
     --border-card: 1px solid lightgrey;
     --padding-button-business-plan: 0.5rem 2rem;
-    --logo1-gb-color:#A2D39B;
-    --logo1-border:10px solid #D1E9CD;
-    --logo2-gb-color:#61082B;
-    --logo3-gb-color:#0093CE;
-    --logo4-gb-color:#FF1C1C;
-    --logo5-gb-color:#D5001F;
-    --logo6-gb-color:#B4D0E7;
-    --logo7-gb-color:#0D2481;
-    --logo8-gb-color:#FFD830;
+    --logo1-gb-color: #A2D39B;
+    --logo1-border: 10px solid #D1E9CD;
+    --logo2-gb-color: #61082B;
+    --logo3-gb-color: #0093CE;
+    --logo4-gb-color: #FF1C1C;
+    --logo5-gb-color: #D5001F;
+    --logo6-gb-color: #B4D0E7;
+    --logo7-gb-color: #0D2481;
+    --logo8-gb-color: #FFD830;
     --free-trial-button-bg-color: white;
     --free-trial-title-text-color: #61082b;
+    --border-question: 1px solid #9b9b9b;
 }
 
 /* RESET */
@@ -472,7 +473,7 @@ a {
     padding: 5rem 0;
 }
 
-.free-trial > .container {
+.free-trial>.container {
     justify-content: space-between;
 }
 
@@ -488,21 +489,54 @@ a {
 }
 
 /* FAQ */
-.faq-title {
-    width: 100%;
-    /* debug */
-    height: 100px;
-    background-color: yellow;
-    margin: 1rem;
+.faq {
+    padding: 5rem 0;
 }
 
-.faq-question {
+.faq-title {
     width: 100%;
-    /* debug */
-    height: 300px;
-    background-color: yellow;
-    margin: 1rem;
 }
+
+.faq-area {
+    width: 100%;
+    margin: 3rem 0;
+    border-bottom: var(--border-question);
+}
+
+.question-section {
+    padding: 2rem 0;
+    justify-content: space-between;
+    border-top: var(--border-question);
+    font-size: 1.15rem;
+}
+
+.fa-angle-down {
+    transition: transform 0,
+}
+
+.question-section:hover .fa-angle-down {
+    transform: rotate(180deg);
+
+
+}
+
+.answer-section {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: visibility 0s,
+        width 3s linear,
+        height 3s linear,
+        padding-bottom 0;
+}
+
+.question-section:hover+.answer-section {
+    visibility: visible;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2rem;
+}
+
 
 /* FOOTER */
 footer {
