@@ -20,6 +20,7 @@
     --logo7-gb-color:#0D2481;
     --logo8-gb-color:#FFD830;
     --free-trial-button-bg-color: white;
+    --free-trial-title-text-color: #61082b;
 }
 
 /* RESET */
@@ -39,6 +40,10 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.section-title {
+    font-size: var(--section-title-font);
 }
 
 /* layout */
@@ -183,12 +188,7 @@ a {
 /* MAIN */
 /* business plan */
 .business-plan {
-    margin-top: 5rem;
-}
-
-.business-plan-title {
-    width: 100%;
-    font-size: var(--section-title-font);
+    margin-top: 7rem;
 }
 
 .business-plan-button {
@@ -335,8 +335,7 @@ a {
     width: 30%;
 }
 
-.find-partner-title {
-    font-size: var(--section-title-font);
+.find-partner .section-title {
     margin-top: 2rem;
 }
 
@@ -358,10 +357,6 @@ a {
     margin: 1.5rem 0;
 }
 
-.dropbox-operation-title {
-    font-size: var(--section-title-font);
-}
-
 .dropbox-operation-card {
     width: calc(85% / 3);
 }
@@ -379,10 +374,6 @@ a {
 /* dropbox client */
 .dropbox-client {
     margin: 5rem 0;
-}
-
-.dropbox-client-title {
-    font-size: var(--section-title-font);
 }
 
 .dropbox-client-link {
@@ -478,14 +469,22 @@ a {
 /* free trial */
 .free-trial {
     background-color: var(--hero-bg-color);
+    padding: 5rem 0;
+}
+
+.free-trial > .container {
     justify-content: space-between;
 }
 
-.free-trial-title {
+.free-trial .section-title {
     width: 60%;
+    color: var(--free-trial-title-text-color);
 }
 
-.free-trial-link {
+.free-trial-button {
+    background-color: var(--free-trial-button-bg-color);
+    align-self: flex-start;
+    padding: var(--padding-button-business-plan);
 }
 
 /* FAQ */
