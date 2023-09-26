@@ -198,14 +198,7 @@ a {
 }
 
 /* button style */
-.method-payment {
-    padding: 1rem;
-    position: relative;
-}
 
-.method-payment input {
-    appearance: none;
-}
 
 /* plan card */
 .business-plan-card {
