@@ -269,9 +269,6 @@ a {
 .small-hr {
     width: 20%;
     margin: 3rem 0;
-}
-
-.small-hr > hr {
     color: lightgray;
 }
 
@@ -348,7 +345,7 @@ a {
 }
 .dropbox-operation-card{
     margin: 1.5rem 0;
-} 
+}
 .dropbox-operation-title {
     font-size: var(--section-title-font);
 }
@@ -402,6 +399,19 @@ a {
 
 .logo-container > img {
     filter: brightness(0) invert(1);
+}
+
+.center-logo-section{
+    padding: 2.5rem;
+}
+
+.center-logo-section > img {
+    width: 50%;
+}
+
+.hr-central-logo {
+    margin: 2rem 0;
+    width: 25%;
 }
 
 
