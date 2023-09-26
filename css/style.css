@@ -1,8 +1,8 @@
 /* ROOT */
 :root {
-    --header-nav-bg-color: white;
+    --header-nav-bg-color: #ffffff;
     --header-nav-text-color: black;
-    --button-text-color: white;
+    --button-text-color: #ffffff;
     --button-color: #0061FF;
     --hero-bg-color: #B4D0E7;
     --button-padding: 0.4rem 0.7rem;
@@ -19,9 +19,10 @@
     --logo6-gb-color: #B4D0E7;
     --logo7-gb-color: #0D2481;
     --logo8-gb-color: #FFD830;
-    --free-trial-button-bg-color: white;
+    --free-trial-button-bg-color: #ffffff;
     --free-trial-title-text-color: #61082b;
     --border-question: 1px solid #9b9b9b;
+    --footer-text-color: #ffffff;
 }
 
 /* RESET */
@@ -541,31 +542,47 @@ a {
 /* FOOTER */
 footer {
     background-color: black;
-    padding: 2rem;
+    padding: 2rem 0 1rem;
+    color: var(--footer-text-color);
 }
 
 /* footer top */
 .footer-link {
     gap: 1rem;
+    margin: 0 0 6rem;
+    justify-content: space-between;
 }
 
 .footer-link-column {
-    width: calc(90% / 5);
-    /* debug */
-    height: 350px;
-    background-color: white;
+    width: calc(94% / 5);
+}
 
+.footer-link-column > h3 {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.footer-link-column > ul {
+    list-style-type: none;
+}
+
+.footer-link-column  li {
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
 }
 
 .footer-hr {
     margin: 2rem 0;
     width: 10%;
-    color: white;
+    color: var(--footer-text-color);
 }
 
 .footer-language {
-    width: 20%;
-    /* debug */
-    height: 50px;
-    background-color: white;
+    align-items: center;
+    margin: 3rem 0 0;
+}
+
+.language {
+    margin-right: 0.3rem;
+
 }
