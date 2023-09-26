@@ -7,6 +7,8 @@
     --hero-bg-color: #B4D0E7;
     --button-padding: 0.4rem 0.7rem;
     --button-font-size: 0.9rem;
+    --section-title-font: 1.5rem;
+    --border-card: 1px solid lightgrey;
 }
 
 /* RESET */
@@ -173,40 +175,114 @@ a {
 
 .business-plan-title {
     width: 100%;
-    /* debug */
-    height: 100px;
-    background-color: blueviolet;
-    margin: 0.5rem;
+    font-size: var(--section-title-font);
 }
 
 .business-plan-button {
     width: 100%;
-    /* debug */
-    height: 50px;
-    background-color: blueviolet;
-    margin: 0.5rem;
 }
+
+/* button style */
+.method-payment {
+    padding: 1rem;
+    position: relative;
+}
+
+.method-payment input {
+    appearance: none;
+}
+
+/* plan card */
 
 .business-plan-card {
     width: 100%;
+    margin: 1rem;
+    gap: 0.8rem;
+    align-items: stretch;
 }
 
 .business-plan-professional,
 .business-plan-advanced,
 .business-plan-enterprise {
     width: calc(95% / 3);
-    /* debug */
-    height: 700px;
-    background-color: blueviolet;
-    margin: 0.5rem;
+    border: var(--border-card);
 }
 
 .business-plan-enterprise-team {
     width: 100%;
-    /* debug */
-    background-color: blueviolet;
-    height: 300px;
-    margin: 0.5rem;
+    border: var(--border-card);
+}
+
+.business-plan-icon {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.fa-solid {
+    margin-right: 0.5rem;
+}
+
+.hr-business {
+    border-top: var(--border-card);
+}
+
+.type-of-plan {
+    margin-top: 1.5rem;
+}
+
+.plan-price {
+    margin-top: 1.5rem;
+    font-weight: bolder;
+}
+
+.payment-type {
+    color: grey;
+    margin-top: 1rem;
+}
+
+.number-of-user,
+.archive-space,
+.plan-function {
+    margin-top: 1rem;
+}
+
+.free-trial-30-days-button {
+    text-align: center;
+    margin-top: 3rem;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: 0.5rem 2rem;
+}
+
+.buy-now {
+    margin-top: 2rem;
+}
+
+.buy-now>a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.small-hr {
+    width: 20%;
+    margin: 3rem 0;
+}
+
+.small-hr>hr {
+    color: lightgray;
+}
+
+.plan-feature>ul {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.plan-feature li {
+    margin-top: 2rem;
+}
+
+.fa-check {
+    color: var(--button-color);
 }
 
 /* find partner section */
