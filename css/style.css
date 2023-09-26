@@ -45,6 +45,10 @@ a {
     padding: 2rem;
 }
 
+.logo-container{
+    width: 60%;
+}
+
 .padding {
     padding: 1rem;
 }
@@ -257,7 +261,7 @@ a {
     margin-top: 2rem;
 }
 
-.buy-now>a {
+.buy-now > a {
     text-decoration: underline;
     color: blue;
 }
@@ -267,7 +271,7 @@ a {
     margin: 3rem 0;
 }
 
-.small-hr>hr {
+.small-hr > hr {
     color: lightgray;
 }
 
@@ -312,7 +316,7 @@ a {
     margin: 4rem 0;
 }
 
-.find-partner>.container {
+.find-partner > .container {
     justify-content: space-between;
 }
 
@@ -339,7 +343,7 @@ a {
 }
 
 /* dopbox operation */
-.dropbox-operation>.container {
+.dropbox-operation > .container {
     justify-content: space-between;
 }
 .dropbox-operation-card{
@@ -395,6 +399,12 @@ a {
     width: calc(100% / 2);
     aspect-ratio: 1/1;
 }
+
+.logo-container > img {
+    filter: brightness(0) invert(1);
+}
+
+
 
 /* left logo section */
 
