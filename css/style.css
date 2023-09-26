@@ -10,6 +10,16 @@
     --section-title-font: 1.5rem;
     --border-card: 1px solid lightgrey;
     --padding-button-business-plan: 0.5rem 2rem;
+    --logo1-gb-color:#A2D39B;
+    --logo1-border:10px solid #D1E9CD;
+    --logo2-gb-color:#61082B;
+    --logo3-gb-color:#0093CE;
+    --logo4-gb-color:#FF1C1C;
+    --logo5-gb-color:#D5001F;
+    --logo6-gb-color:#B4D0E7;
+    --logo7-gb-color:#0D2481;
+    --logo8-gb-color:#FFD830;
+    --free-trial-button-bg-color: white;
 }
 
 /* RESET */
@@ -45,7 +55,7 @@ a {
     padding: 2rem;
 }
 
-.logo-container{
+.logo-container {
     width: 60%;
 }
 
@@ -261,7 +271,7 @@ a {
     margin-top: 2rem;
 }
 
-.buy-now > a {
+.buy-now>a {
     text-decoration: underline;
     color: blue;
 }
@@ -313,7 +323,7 @@ a {
     margin: 4rem 0;
 }
 
-.find-partner > .container {
+.find-partner>.container {
     justify-content: space-between;
 }
 
@@ -340,12 +350,14 @@ a {
 }
 
 /* dopbox operation */
-.dropbox-operation > .container {
+.dropbox-operation>.container {
     justify-content: space-between;
 }
-.dropbox-operation-card{
+
+.dropbox-operation-card {
     margin: 1.5rem 0;
 }
+
 .dropbox-operation-title {
     font-size: var(--section-title-font);
 }
@@ -354,11 +366,12 @@ a {
     width: calc(85% / 3);
 }
 
-.dropbox-operation-card > h3 {
+.dropbox-operation-card>h3 {
     margin-top: 1rem;
     font-size: 1.5rem;
 }
-.dropbox-operation-card > p {
+
+.dropbox-operation-card>p {
     margin-top: 2rem;
 }
 
@@ -367,9 +380,11 @@ a {
 .dropbox-client {
     margin: 5rem 0;
 }
+
 .dropbox-client-title {
     font-size: var(--section-title-font);
 }
+
 .dropbox-client-link {
     width: 100%;
     margin: 4rem 0;
@@ -397,11 +412,11 @@ a {
     aspect-ratio: 1/1;
 }
 
-.logo-container > img {
+.logo-container>img {
     filter: brightness(0) invert(1);
 }
 
-.center-logo-section{
+.center-logo-section {
     padding: 2.5rem;
     overflow-y: scroll;
 }
@@ -410,7 +425,7 @@ a {
     display: none;
 }
 
-.center-logo-section > img {
+.center-logo-section>img {
     width: 50%;
 }
 
@@ -428,57 +443,49 @@ a {
 /* left logo section */
 
 .logo1 {
-    background-color: #A2D39B;
-    border: 10px solid #D1E9CD;
+    background-color: var(--logo1-gb-color);
+    border: var(--logo1-border);
 }
 
 .logo2 {
-    background-color: #61082B;
+    background-color: var(--logo2-gb-color);
 }
 
 .logo3 {
-    background-color: #0093CE;
+    background-color: var(--logo3-gb-color);
 }
 
 .logo4 {
-    background-color: #FF1C1C;
+    background-color: var(--logo4-gb-color);
 }
 
 .logo5 {
-    background-color: #D5001F;
+    background-color: var(--logo5-gb-color);
 }
 
 .logo6 {
-    background-color: #B4D0E7;
+    background-color: var(--logo6-gb-color);
 }
 
 .logo7 {
-    background-color: #0D2481;
+    background-color: var(--logo7-gb-color);
 }
 
 .logo8 {
-    background-color: #FFD830;
+    background-color: var(--logo8-gb-color);
 }
 
 /* free trial */
 .free-trial {
-    background-color: #B4D0E7;
-    padding: 2rem;
+    background-color: var(--hero-bg-color);
+    justify-content: space-between;
 }
 
 .free-trial-title {
     width: 60%;
-    /* debug */
-    height: 150px;
-    background-color: green;
-    margin-right: 1rem;
 }
 
 .free-trial-link {
-    width: calc(40% - 1rem);
-    /* degug */
-    height: 150px;
-    background-color: green;
 }
 
 /* FAQ */
