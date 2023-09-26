@@ -403,6 +403,11 @@ a {
 
 .center-logo-section{
     padding: 2.5rem;
+    overflow-y: scroll;
+}
+
+.center-logo-section::-webkit-scrollbar {
+    display: none;
 }
 
 .center-logo-section > img {
@@ -414,7 +419,11 @@ a {
     width: 25%;
 }
 
-
+.company-logo-speech,
+.speech-autor {
+    font-size: 0.83rem;
+    margin: 2rem 0;
+}
 
 /* left logo section */
 
