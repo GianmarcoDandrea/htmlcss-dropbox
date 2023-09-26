@@ -2,9 +2,11 @@
 :root {
     --header-nav-bg-color: white;
     --header-nav-text-color: black;
-    --button-text-color:white;
+    --button-text-color: white;
     --button-color: #0061FF;
     --hero-bg-color: #B4D0E7;
+    --button-padding: 0.4rem 0.7rem;
+    --button-font-size: 0.9rem;
 }
 
 /* RESET */
@@ -23,18 +25,21 @@ img {
 /* COMMON */
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* layout */
 .container {
     width: 70%;
+    max-width: 1200px;
     margin: auto;
     /* debug */
     border: 1px solid black;
 }
 
 .container-large {
-    width: 75%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding: 2rem;
 }
@@ -101,10 +106,10 @@ a {
     color: var(--header-nav-text-color)
 }
 
-.access-button > * {
-    font-size: 0.9rem;
+.access-button>* {
+    font-size: var(--button-font-size);
     margin-left: 0.8rem;
-    padding: 0.3rem 0.7rem;
+    padding: var(--button-padding);
 }
 
 .log-in {
@@ -120,28 +125,44 @@ a {
 .hero {
     width: 100%;
     background-color: var(--hero-bg-color);
-    height: 97vh;
+    height: 88vh;
     padding: 6.7rem 0 0 0;
 }
 
 .hero-title {
     width: 80%;
     font-size: 2rem;
-    font-weight:bolder;
+    font-weight: bolder;
+    margin-bottom: 1rem;
 }
 
 .hero-article {
-    width: 35%;
+    width: 30%;
+}
 
+.header-free-trial {
+    margin-top: 3rem;
+}
 
+.header-free-trial-link {
+    font-size: 0.9rem;
+    padding: var(--button-padding);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+}
+
+.header-free-trial>p {
+    margin-top: 3rem;
+    font-size: var(--button-font-size);
+}
+
+.header-free-trial-download {
+    margin-top: 2rem;
+    font-size: 1.5rem;
 }
 
 .hero-image {
-    width: 55%;
-    /* debug */
-    height: 400px;
-    background-color: aqua;
-    margin: 1rem;
+    width: 70%;
 }
 
 /* MAIN */
