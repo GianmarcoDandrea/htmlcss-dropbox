@@ -564,33 +564,10 @@ a {
     font-size: 1.15rem;
 }
 
-.fa-angle-down {
-    transition: transform 0,
-}
-
-.question-section:hover .fa-angle-down {
-    transform: rotate(180deg);
-
-
-}
 
 .answer-section {
-    width: 100%;
-    height: 0;
-    visibility: hidden;
-    transition: visibility 0s,
-        width 3s linear,
-        height 3s linear,
-        padding-bottom 0;
-}
-
-.question-section:hover+.answer-section {
-    visibility: visible;
-    width: 100%;
-    height: fit-content;
     padding-bottom: 2rem;
 }
-
 
 /* FOOTER */
 footer {
