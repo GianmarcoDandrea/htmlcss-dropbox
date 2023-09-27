@@ -236,7 +236,7 @@ a {
 }
 
 .method-payment input:checked~.checkmark {
-    background-color: #2196F3;
+    background-color: var(--button-color);
 }
 
 .checkmark:after {
