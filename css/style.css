@@ -1,15 +1,26 @@
 /* ROOT */
 :root {
-    --header-nav-bg-color: #ffffff;
-    --header-nav-text-color: black;
-    --button-text-color: #ffffff;
-    --button-color: #0061FF;
-    --hero-bg-color: #B4D0E7;
+    /* common */
     --button-padding: 0.4rem 0.7rem;
     --button-font-size: 0.9rem;
     --section-title-font: 1.5rem;
+    --button-text-color: #ffffff;
+    --button-color: #0061FF;
+
+    /* nav */
+    --header-nav-bg-color: #ffffff;
+    --header-nav-text-color: black;
+
+    /* hero */
+    --hero-bg-color: #B4D0E7;
+
+    /* button business plan */
+    --checkmark-dim: 1.5rem;
+    --checkmark-dot-dim: 1rem;
     --border-card: 1px solid lightgrey;
     --padding-button-business-plan: 0.5rem 2rem;
+
+    /* partener logo section  */
     --logo1-gb-color: #A2D39B;
     --logo1-border: 10px solid #D1E9CD;
     --logo2-gb-color: #61082B;
@@ -19,9 +30,13 @@
     --logo6-gb-color: #B4D0E7;
     --logo7-gb-color: #0D2481;
     --logo8-gb-color: #FFD830;
+
+    /* free trial section */
     --free-trial-button-bg-color: #ffffff;
     --free-trial-title-text-color: #61082b;
     --border-question: 1px solid #9b9b9b;
+
+    /* footer section */
     --footer-text-color: #ffffff;
 }
 
@@ -197,8 +212,53 @@ a {
     width: 100%;
 }
 
-/* button style */
+.method-payment input {
+    appearance: none;
+}
 
+/* button style */
+.method-payment {
+    margin-right: 1rem;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--checkmark-dim);
+    width: var(--checkmark-dim);
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.method-payment input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.method-payment input:checked~.checkmark:after {
+    display: block;
+}
+
+.method-payment .checkmark:after {
+    top: calc( ( var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2 );
+
+    left: calc( (var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2 );
+
+    width: var(--checkmark-dot-dim);
+    height: var(--checkmark-dot-dim);
+    border-radius: 50%;
+    background: white;
+}
 
 /* plan card */
 .business-plan-card {
