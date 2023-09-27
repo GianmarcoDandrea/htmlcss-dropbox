@@ -250,9 +250,9 @@ a {
 }
 
 .method-payment .checkmark:after {
-    top: calc( ( var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2 );
+    top: calc((var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2);
 
-    left: calc( (var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2 );
+    left: calc((var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2);
 
     width: var(--checkmark-dot-dim);
     height: var(--checkmark-dot-dim);
@@ -610,16 +610,16 @@ footer {
     width: calc(94% / 5);
 }
 
-.footer-link-column > h3 {
+.footer-link-column>h3 {
     margin: 1rem 0;
     font-size: 1.4rem;
 }
 
-.footer-link-column > ul {
+.footer-link-column>ul {
     list-style-type: none;
 }
 
-.footer-link-column  li {
+.footer-link-column li {
     padding: 0.5rem 0;
     font-size: 0.8rem;
 }
