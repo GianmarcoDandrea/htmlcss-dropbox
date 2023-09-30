@@ -85,6 +85,10 @@ a {
     padding: 1rem;
 }
 
+.mr-2 {
+    margin-right: 2rem;
+}
+
 .flex-direction {
     display: flex;
 }
@@ -210,54 +214,25 @@ a {
 
 .business-plan-button {
     width: 100%;
-}
-
-.method-payment input {
-    appearance: none;
+    font-size: 1rem;
 }
 
 /* button style */
+
+input[type="radio"] {
+    appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 0.1rem solid #d0d0d3;
+}
+
+input[type="radio"]:checked {
+    border:0.35rem solid var(--button-color);
+}
+
 .method-payment {
-    margin-right: 1rem;
-    position: relative;
-    padding-left: 2rem;
-    margin-bottom: 0.75rem;
-    font-size: 1.3rem;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: var(--checkmark-dim);
-    width: var(--checkmark-dim);
-    background-color: #eee;
-    border-radius: 50%;
-}
-
-.method-payment input:checked~.checkmark {
-    background-color: var(--button-color);
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.method-payment input:checked~.checkmark:after {
-    display: block;
-}
-
-.method-payment .checkmark:after {
-    top: calc((var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2);
-
-    left: calc((var(--checkmark-dim) - var(--checkmark-dot-dim)) / 2);
-
-    width: var(--checkmark-dot-dim);
-    height: var(--checkmark-dot-dim);
-    border-radius: 50%;
-    background: white;
+    gap: 0.5rem;
 }
 
 /* plan card */

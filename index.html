@@ -116,14 +116,15 @@
                 </div>
 
                 <div class="business-plan-button flex-direction flex-start padding">
-                    <label class="method-payment">Fatturazione mensile
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="method-payment">Fatturazione annuale
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
+                    <div class="method-payment mr-2 flex-direction flex-center">
+                        <input type="radio" name="payment" id="monthly" checked="checked">
+                        <label for="monthly">Fatturazione mensile</label>
+                    </div>
+            
+                    <div class="method-payment flex-direction flex-center">
+                        <input type="radio" name="payment" id="annually" checked="checked">
+                        <label for="annually">Fatturazione mensile</label>
+                    </div>
                 </div>
 
                 <div class="business-plan-card flex-direction flex-wrap">
