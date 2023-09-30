@@ -229,7 +229,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    border:0.35rem solid var(--button-color);
+    border: 0.35rem solid var(--button-color);
 }
 
 .method-payment {
