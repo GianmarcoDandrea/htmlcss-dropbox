@@ -166,7 +166,7 @@ a {
 .hero {
     width: 100%;
     background-color: var(--hero-bg-color);
-    height: 88vh;
+    height: 95vh;
     padding: 6.7rem 0 0 0;
 }
 
